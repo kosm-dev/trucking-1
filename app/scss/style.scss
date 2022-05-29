@@ -33,7 +33,7 @@
   &__list-link {
     padding: 14px 0;
     display: inline-block;
-     @extend %mont-500;
+    @extend %mont-500;
 
     font-size: 18px;
     line-height: 20px;
@@ -72,20 +72,21 @@
 }
 
 .top {
+  display: flex;
+  align-items: center;
   height: 100vh;
   min-height: 600px;
   background-image: url("../images/top-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  &__inner {
-  }
+
   &__content {
     min-height: 100vh;
+    min-height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 70px;
   }
   &__title {
     margin-bottom: 15px;
@@ -112,6 +113,76 @@
   }
   &__link {
     align-self: flex-start;
+  }
+}
+
+
+.about {
+  background-image: url('../images/decor/decor-1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 60px 0 100px;
+  
+  &__title {
+    margin-bottom: 53px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+  }
+  &__text {
+    max-width: 650px;
+    width: 100%;
+    padding-right: 20px;
+  }
+  &__img {
+    max-width: 396px;
+    width: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  &__features {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__features-item {
+    padding-right: 25px;
+  }
+  &__features-item:last-child {
+    padding-right: 0;
+  }
+}
+
+.feature {
+  max-width: 305px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.17);
+  border-radius: 20px;
+  &__inner {
+    display: flex;
+    align-items: center;
+    padding: 15px 25px 25px 15px;
+  }
+  &__icon {
+    flex: 0 0 55px;
+  }
+  &__content {
+    padding-left: 9px;
+  }
+  &__title {
+    margin-bottom: 5px;
+    @extend %mont-600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+  }
+  &__text {
+    @extend %mont-500;
+    font-size: 18px;
+    line-height: 110.9%;
+    color: $default;
   }
 }
 

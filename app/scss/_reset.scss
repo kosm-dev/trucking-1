@@ -42,6 +42,7 @@ ul[class] {
 img {
   max-width: 100%;
   display: block;
+  object-fit: cover;
 }
 
 input,
@@ -52,5 +53,6 @@ select {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
 }
